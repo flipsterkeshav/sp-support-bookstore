@@ -1,0 +1,70 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+mainClassName = 'com.bookstore.BookStoreApplication'
+
+run {
+    args 'server', 'config/config.yml'
+}
+
+jar {
+    manifest.attributes("Main-Class": mainClassName)
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+
+dependencies {
+
+    repositories {
+        maven { url 'http://artifactory.nm.flipkart.com:8081/artifactory/libs-releases' }
+        maven { url 'http://artifactory.nm.flipkart.com:8081/artifactory/libs-snapshot' }
+        mavenCentral()
+    }
+    compile 'joda-time:joda-time:2.3',
+            //'org.jadira.usertype:usertype.jodatime:2.0.1',
+            'com.google.guava:guava:15.0',
+            'mysql:mysql-connector-java:5.1.28',
+            'org.hibernate:hibernate-entitymanager:4.3.5.Final',
+            'org.hibernate:hibernate-core:4.3.5.Final',
+            'com.zaxxer:HikariCP:2.4.1',
+            'org.modelmapper:modelmapper:0.6.3',
+            'io.federecio:dropwizard-swagger:0.5.2',
+            'net.sf.dozer:dozer:5.0',
+            'com.googlecode.genericdao:dao-hibernate:1.2.0',
+            'org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final',
+            'com.fasterxml.jackson.core:jackson-databind:2.4.2',
+            'org.projectlombok:lombok:1.12.2'
+
+    compile('com.fquick:fquick-hibernate-restbus-plugin:1.0.6-SNAPSHOT') {
+        exclude group: 'javax.ws.rs', module: 'javax.ws.rs-api'
+    }
+
+    compile 'io.dropwizard:dropwizard-core:' + dropwizardVersion,
+            'io.dropwizard:dropwizard-migrations:' + dropwizardVersion
+
+    compile('com.hubspot.dropwizard:dropwizard-guice:' + '0.7.0.2') {
+        exclude group: 'com.google.inject', module: 'guice_servlet'
+    }
+
+    compile 'com.google.inject.extensions:guice-multibindings:' + guiceVersion,
+            'com.google.inject.extensions:guice-persist:' + guiceVersion
+
+    compile 'org.hibernate:hibernate-envers:4.3.5.Final'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.4'
+}
+
+task(runService, dependsOn: 'classes', type: JavaExec) {
+    main = mainClassName
+    classpath = sourceSets.main.runtimeClasspath
+    args 'server', 'config/config.yml'
+}
