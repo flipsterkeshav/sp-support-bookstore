@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.federecio:dropwizard-swagger:0.5.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/io.federecio/dropwizard-swagger/0.5.2/jar/9d5b6f378f882589d070ada9fcceeee513a2a217/dropwizard-swagger-0.5.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/io.federecio/dropwizard-swagger/0.5.2/source/3c0860d13c9a5f7dd2e6baaf28dd67e09f44d5b3/dropwizard-swagger-0.5.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

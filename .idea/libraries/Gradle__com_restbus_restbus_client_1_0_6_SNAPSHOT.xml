@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.restbus:restbus-client:1.0.6-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/com.restbus/restbus-client/1.0.6-SNAPSHOT/jar/ec963e14c0b1470526f8fbda060a8eea303a0fb0/restbus-client-1.0.6-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/com.restbus/restbus-client/1.0.6-SNAPSHOT/source/a3e5b207429c7933314ac6d454ed57fd854de2d4/restbus-client-1.0.6-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.codahale.metrics:metrics-jetty9:3.0.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/com.codahale.metrics/metrics-jetty9/3.0.2/bundle/39cc25ad4db6320f6a97f755ebe00ed5def71b9a/metrics-jetty9-3.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/com.codahale.metrics/metrics-jetty9/3.0.2/source/3b5a7bae76ceeba633fc1385568b686dee12990c/metrics-jetty9-3.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

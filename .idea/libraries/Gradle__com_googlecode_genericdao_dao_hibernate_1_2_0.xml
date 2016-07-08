@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.googlecode.genericdao:dao-hibernate:1.2.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/com.googlecode.genericdao/dao-hibernate/1.2.0/jar/bfde65112e6608f4a08becb6653a2880d47bcd78/dao-hibernate-1.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/com.googlecode.genericdao/dao-hibernate/1.2.0/source/97dd6ab38370d51ce532bad43b2a6c2165858e72/dao-hibernate-1.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
